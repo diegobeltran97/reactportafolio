@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Uconstruction from "./Components/pages/Uconstruction"
+import MAbout from "./Components/pages/MAbout";
+import "./Utilities/css/App.css";
+import Header from "./Components/layout/Header";
+import HomePage from "./Components/layout/HomePage";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {
+    var pages = [HomePage];
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={MAbout} />
+          <Route path="/blog" component={Uconstruction} />
+          <Route path="/projects" component={Uconstruction} />
+          <Route path="/contact" component={Uconstruction} />
+
+        </div>
+      </Router>
     );
   }
 }
