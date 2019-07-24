@@ -4,6 +4,8 @@ import MAbout from "./Components/pages/MAbout";
 import "./Utilities/css/App.css";
 import Header from "./Components/layout/Header";
 import HomePage from "./Components/layout/HomePage";
+import Projectpage from "./Components/pages/Projectpage";
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -17,9 +19,9 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={MAbout} />
           <Route path="/blog" component={Uconstruction} />
-          <Route path="/projects" component={Uconstruction} />
+          <Route path="/projects" component={Projectpage} />
           <Route path="/contact" component={Uconstruction} />
-
+        
         </div>
       </Router>
     );

@@ -25,3 +25,8 @@ img.imagen {
   text-align: center;
   margin: 15px 0;
 }
+/*Main Page*/
+.container-content {
+  display: flex;
+  flex-direction: column;
+}
