@@ -13,7 +13,7 @@ export default class projects extends Component {
         image: imagent,
         descripcion:
           "Bill A&E es una facturacion virtual para almacenamiento de datos y reportes mensuales",
-        link: "/bill"
+        link: "https://productsae.herokuapp.com/home"
       },
       {
         title: "F&C",
@@ -38,6 +38,7 @@ export default class projects extends Component {
               titulo={project.title}
               imagen={project.image}
               descripcion={project.descripcion}
+              link={project.link}
             />
           ))}
         </div>

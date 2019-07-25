@@ -30,3 +30,38 @@ img.imagen {
   display: flex;
   flex-direction: column;
 }
+.Container {
+  color: #fff;
+  padding: 3rem;
+}
+.Container .titulo {
+  font-family: 'Roboto', sans-serif;
+}
+.Container .description {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 18px;
+}
+
+/*Slider*/
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
