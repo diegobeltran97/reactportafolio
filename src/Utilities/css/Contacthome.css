@@ -2,14 +2,16 @@ section.contacthome {
   background-color: #333333;
   padding: 45px;
 }
-.contacthome h2 {
+.contacthome  {
   color: #fff;
 }
-form {
-  width: 50%;
-  margin: 10% auto;
-  min-width: 9rem;
+.contacthome .correo {
+  margin-top: 2rem;
+  font-family: 'Roboto';
+  font-size: 18px;
+  text-align: center;
 }
+
 
 input,
 textarea {

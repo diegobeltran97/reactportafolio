@@ -1,31 +1,34 @@
 import React, { Component } from "react";
 import Card from "../models/Card";
+import {
+  Link
+} from 'react-router-dom';
 import "../../Utilities/css/Projects.css";
-import imagent from "../../Utilities/img/app.jpg";
-import lawyerimage from "../../Utilities/img/lawyer.jpg";
-import touraven from "../../Utilities/img/logo.jpg";
+import doctors from "../../Utilities/img/doctorsathome.jpg";
+import simpleCompany from "../../Utilities/img/simpleCompany.png";
+import facturacion from "../../Utilities/img/app.jpg";
 
 export default class projects extends Component {
   render() {
     const projects = [
       {
-        title: "Bill A&e",
-        image: imagent,
+        title: "Doctors at Home",
+        image: doctors,
         descripcion:
-          "Bill A&E es una facturacion virtual para almacenamiento de datos y reportes mensuales",
-        link: "https://productsae.herokuapp.com/home"
+          "Desarrollo de la aplicación móvil híbrida y sistema de administración.",
+        link: "/projects"
       },
       {
-        title: "F&C",
-        image: lawyerimage,
-        descripcion: "Pagina de una firma de abogados trabajando en Panamá",
-        link: "/bill"
+        title: "Simple Company",
+        image: simpleCompany,
+        descripcion: "Pagina de empresa de consultoria de software",
+        link: "/projects"
       },
       {
-        title: "Tour Aventuras pty",
-        image: touraven,
-        descripcion: "Pagina de turismo en Panamá",
-        link: "/bill"
+        title: "Bill A&E",
+        image: facturacion,
+        descripcion: "Sistema de reportería, generación de facturas y gestión de productos",
+        link: "/projects"
       }
     ];
     return (
@@ -33,13 +36,15 @@ export default class projects extends Component {
         <h2>Proyectos</h2>
         <div className="cards">
           {projects.map((project, i) => (
+          <Link  to={project.link}>
             <Card
               key={i}
               titulo={project.title}
               imagen={project.image}
               descripcion={project.descripcion}
-              link={project.link}
+             
             />
+            </Link>
           ))}
         </div>
       </div>

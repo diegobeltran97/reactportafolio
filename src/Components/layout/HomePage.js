@@ -11,7 +11,7 @@ class HomePage extends Component {
       title: "Acerca",
       logo: Logo,
       description:
-        "Soy un desarrollador web vivendo en Panamá con conocimiento en programación y marketing. Mi pasión es entender como las compañias trabajan y como se pueden mejorar con diferentes tecnologias, actualmente trabajando en proyectos web y marketing"
+        "Soy desarrollador web con conocimientos en programación web y marketing. Mis objeticos son crear inovaciones en el campo de la Tecnología que brinden soluciones"
     };
     return (
       <div>
@@ -21,7 +21,7 @@ class HomePage extends Component {
               <h1>Diego Sastoque</h1>
               <h2>
                 <Typed
-                  strings={["Web Developer", "Analyst", "Self-taught"]}
+                  strings={["Desarrollador", "Freelance", "Autodidacta"]}
                   typeSpeed={50}
                   loop
                 />

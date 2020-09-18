@@ -10,25 +10,17 @@ export default class Contacthome extends Component {
         <section className="contacthome">
 
         <h2>Interesado en un Proyecto ?...</h2>
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="text" placeholder="Name" name="name" required />
-            <input type="email" placeholder="Email" name="email" required />
-            <textarea placeholder="Message" name="message" required />
-           
-
-            <input type="submit" value="Send" />
-           
-          </form>
+          <h2 className="correo">diegosastoque97@gmail.com</h2>
           <ul className="icons">
             <li>
-              <a href="" className="icon-github" />
+              <a href="https://github.com/diegobeltran97" className="icon-github" />
             </li>
-            <li><a href="" className="icon-instagram" />
+            <li>
+              <a href="https://instagram.com/sastoque_diego?igshid=7ecdwfzvpamc" className="icon-instagram" />
             </li>
-            <li><a href="" className="icon-twitter" /></li>
-
-            <li><a href="" className="icon-quill" /></li>
-            <li><a href="" className="icon-linkedin" /></li>
+            <li>
+              <a href="https://www.linkedin.com/in/diego-sastoque-747b93127/" className="icon-linkedin" />
+              </li>
           </ul>
           <img src={Logo} alt="logo" width="75px" height="50px" />
         </section>

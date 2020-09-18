@@ -12,8 +12,7 @@ class Header extends Component {
       { label: "Home", to: "/" },
       { label: "Acerca", to: "/about" },
       { label: "Projects", to: "/projects" },
-      { label: "Blog", to: "/Blog" },
-      { label: "Contacto", to: "/Contact" }
+      { label: "Blog", to: "/Blog" }
     ];
     return (
       

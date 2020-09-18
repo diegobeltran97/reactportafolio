@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import {
+  Link
+} from 'react-router-dom';
 import "../../Utilities/css/menusection.css";
 import "../../Utilities/js/menusection.js";
 
@@ -13,10 +16,21 @@ class NavMenu extends Component {
     });
   };
 
+  hideMenu = () => {
+    if ( this.state.off != true ) {
+      this.setState({
+        off: !this.state.off
+      });
+    }
+   
+  }
+
+ 
+
   render() {
     const { links } = this.props;
     return (
-      <div className={this.state.off ? "menu-section" : "menu-section on"}>
+      <div   className={this.state.off ? "menu-section" : "menu-section on"}>
         <div
           onClick={this.setToggleClass}
           className={this.state.off ? "menu-toggle" : "menu-toggle on"}
@@ -29,8 +43,8 @@ class NavMenu extends Component {
         <nav>
           <ul className={this.state.off ? "hidden" : "m"}>
             {links.map((link, index) => (
-              <li key={"mykey" + index}>
-                <a href={link.to}>{link.label}</a>
+              <li key={"mykey" + index}  onClick={this.hideMenu} >
+                <Link to={link.to}>{link.label}</Link>
               </li>
             ))}
           </ul>

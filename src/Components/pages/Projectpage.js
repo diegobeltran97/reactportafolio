@@ -1,38 +1,41 @@
 import React, { Component } from 'react';
 import Project from '../models/Project';
-import imagentapp1 from "../../Utilities/img/app.jpg"
-import imagentapp2 from "../../Utilities/img/app2.jpg"
-import imagentapp3 from "../../Utilities/img/app3.png";
-import lawyerimage from "../../Utilities/img/lawyer.jpg";
-import touraven from "../../Utilities/img/logo.jpg";
+import doctors from "../../Utilities/img/doctorsathome2.png";
+import simpleCompany from "../../Utilities/img/simplecompanypro.jpg";
+import facturacion from "../../Utilities/img/app.jpg";
+
 
 
 export default class Projectpage extends Component {
     render() {
         const projects = [
+          
+            {
+              title: "Doctors at Home",
+              image: doctors,
+              descripcion: "Desarrollo de la aplicación móvil híbrida y sistema de administración.",
+              tecnologia: 'React Native | Node js | Php | HTML | CSS',
+              link: "/bill",
+              color: "#fff"
+            },
+            {
+              title: "Simple Company",
+              image: simpleCompany,
+              descripcion: "Pagina para  un grupo de apasionados emprendedores, programadores y diseñadores",
+              tecnologia: 'Wordpress | js | Google Analytics',
+              link: "/bill",
+              color: "#fff"
+            },
             {
               title: "Bill A&e",
-              image: [imagentapp1,imagentapp2 , imagentapp3],
+              image: facturacion,
               descripcion:
                 "Bill A&E es una facturacion virtual para almacenamiento de datos y reportes mensuales",
+              tecnologia: 'Node js | Materialize | HTML | CSS',
               client: "Bills A&E",
               link: "https://productsae.herokuapp.com/",
-              color: "#292A2C"
+              color: "#fff"
               
-            },
-            {
-              title: "F&C",
-              image: [lawyerimage],
-              descripcion: "Pagina de una firma de abogados trabajando en Panamá",
-              link: "/bill",
-              color: "#333"
-            },
-            {
-              title: "Tour Aventuras pty",
-              image: [touraven],
-              descripcion: "Pagina de turismo en Panamá",
-              link: "/bill",
-              color: "#292A22"
             }
           ];
         
@@ -42,7 +45,8 @@ export default class Projectpage extends Component {
             <Project
               key={i}
               titulo={project.title}
-              imagen={project.image}
+              tecnologia={project.tecnologia}
+              image={project.image}
               description={project.descripcion}
               color={project.color}
               link={project.link}

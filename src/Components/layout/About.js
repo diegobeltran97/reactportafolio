@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import {
+  Link
+} from 'react-router-dom';
 import "../../Utilities/css/About.css";
 
 export default class About extends Component {
@@ -11,8 +14,8 @@ export default class About extends Component {
           <div className="subtitle">
             <h2>{titulo}</h2>
           </div>
-          <p>
-            {descripcion} <a href="">.....read more</a>
+          <p className="description">
+            {descripcion} <Link to="/about">.....leer más</Link>
           </p>
         </section>
       </div>

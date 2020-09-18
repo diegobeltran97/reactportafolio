@@ -13,28 +13,22 @@ export default class MAbout extends Component {
             <div className="description">
               <h2>Acerca</h2>
               <p>
-                Soy un desarrollador web vivendo en Panamá con conocimiento en
-                programación y marketing. Mi pasión es entender como las
-                compañias trabajan y como se pueden mejorar con diferentes
-                tecnologias, actualmente trabajando en proyectos web y marketing
+                Soy un desarrollador web vivendo en panamá con conocimientos en
+                programación y marketing. Mis objetivos es comprender como las
+                compañias trabajan y como se puede inovar con diferentes
+                tecnologias.
+                Además de ser un desarrollador , disfruto la mayor parte de
+                mi tiempo tomando cursos, leyendo y sobretodo creando networking.  
               </p>
               <p>
-                Además de ser un desarrollador web, disfruto la mayor parte de
-                mi tiempo haciendo deporte y saliendo con mis amigos ademas de
-                ello me gusta leer y tomar cursos sobre temas de mi interés, ir
-                a eventos y conocer a diferentes personas.
-              </p>
-              <p>
-                Otros intereses en el campo son el Marketing, Bussiness
-                Intelligence, Growth Hacking y diferentes temas que involucran
-                el crecimiento de una empresa para el éxito.
-              </p>
-              <p>
-                Por ultimo mi objetivo es trabajar en entornos que a la gente le
+                Mis otro intereses  son el marketing, bussiness
+                intelligence, growth Hacking y diferentes temas que involucran
+                el crecimiento de una empresa para el éxito. trabajar en entornos que a la gente le
                 guste crecer en sí mismos y tenga diferentes sueños sobre su
                 compañía, para mí esto es lo más importante en una empresa,
                 crear valor y creer en ello.
               </p>
+             
             </div>
           </div>
         </section>
